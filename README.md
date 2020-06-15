@@ -4,11 +4,14 @@
 An app that scrapes articles from the New York Times website and lets users save articles and leave comments on the latest news.
 
 ## How It Works
-* Using Cheerio, user is able to Scrape articles by clicking the "Scrap New Article" button. Once, the articles load, users will be able to click the links to the actual webpage.
-* Should the user be interested in the article or wants to save it for later, can click on the "Save Article" button.
-* Afterwards, they'll go to the navbar and click on "Saved Article" link, and can view their saved articles.
-* While on the "Saved Article" page, users can either delete or comment on those articles. This is done by clicking on the "Delete" or "Add a Note" button, respectively
+Whenever a user visits your site, the app should scrape stories from a news outlet of your choice and display them for the user. Each scraped article should be saved to your application database. At a minimum, the app should scrape and display the following information for each article:
 
+     * Headline - the title of the article
+
+     * Summary - a short summary of the article
+
+     * URL - the url to the original article
+Users should also be able to leave comments on the articles displayed and revisit them later. The comments should be saved to the database as well and associated with their articles. Users should also be able to delete comments left on articles. All stored comments should be visible to every user.
 ## Technologies used:
  * Node.js
  * Express.js
