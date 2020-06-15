@@ -1,6 +1,6 @@
 var router = require("express").Router();
-//conect to the clear coontroller
-var fetchController = require("../../controllers/fetch");
-//routes for the functions from the clear controller
-router.get("/", fetchController.scrapeArticles);
+var fetchCon = require("../../controllers/fetch");
+
+router.get("/", fetchCon.scrapeArticles);
+
 module.exports = router;

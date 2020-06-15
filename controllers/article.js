@@ -1,5 +1,7 @@
 // Controller for our articles
+// ============================
 var db = require("../models");
+
 module.exports = {
   // Find all articles, sort them by date, send them back to the user
   findAll: function(req, res) {

@@ -1,6 +1,6 @@
 var router = require("express").Router();
-//conect to the clear coontroller
-var clearController = require("../../controllers/clear");
-//routes for the functions from the clear controller
-router.get("/", clearController.clearDB);
+var clearCon = require("../../controllers/clear");
+
+router.get("/", clearCon.clearDB);
+
 module.exports = router;
